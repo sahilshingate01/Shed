@@ -1,12 +1,12 @@
 #!/bin/sh
-# Shed installer: curl -fsSL https://shed-sigma.vercel.app/install.sh | sh
+# Shed installer: curl -fsSL https://shed-site-kappa.vercel.app/install.sh | sh
 # Installs Shed into ~/.shed/app, runs it (and its https tunnel) as two background services that start at login,
 # then opens it in your browser. Run again to update. Uninstall: curl -fsSL …/install.sh | sh -s -- --uninstall
 set -eu
 
 SHED_HOME="${SHED_HOME:-$HOME/.shed}"
 APP="$SHED_HOME/app"
-REPO="${SHED_REPO:-https://github.com/IAmUnbounded/shed.git}"
+REPO="${SHED_REPO:-https://github.com/sahilshingate01/Shed.git}"
 REF="${SHED_REF:-main}"
 PORT="${SHED_PORT:-4378}"
 LABEL="${SHED_LABEL:-dev.shed}"
